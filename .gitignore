@@ -36,5 +36,13 @@ wheels/
 # VS Code
 .vscode/
 
+
 # PyCharm
 .idea/
+
+# Large Files
+*.pptx
+
+# Generated Artifacts
+extract_*.py
+extract_*.txt
