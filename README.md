@@ -1,4 +1,4 @@
-# DRL_Navigation_Robot_ROS2_Foxy
+# Capstone_Project
  Deep Reinforcement Learning for mobile robot navigation in ROS Gazebo 11 simulator. Using Twin Delayed Deep Deterministic Policy Gradient (TD3) neural network, a robot learns to navigate to a random goal point in a simulated environment while avoiding obstacles. Obstacles are detected by LIDAR (Light Detection and Ranging) sensor and a goal is given to the robot in polar coordinates. Trained in ROS Gazebo 11 simulator with PyTorch. Tested with ROS2 Foxy on Ubuntu 20.04 with python 3.8.10 and pytorch 1.10.
  <p align="center">
     <img width=70% src="https://github.com/toxuandung/DRL_Navigation_Robot_ROS2_Foxy/blob/main/Test_example_env1.gif">
@@ -23,7 +23,7 @@ TD3 is an actor-critic type of network similar to DDPG. That means that there is
     <img width=90% src="https://github.com/toxuandung/DRL_Navigation_Robot_ROS2_Foxy/blob/main/Td3.png">
 </p> 
 
-The detail of the network can be found in src/td3/scripts
+The detail of the network can be found in src/Capstone_Project/scripts
 
 The Robot and The Evironment :
 
@@ -71,8 +71,8 @@ $ sudo apt install ros-foxy-xacro
 Clone the repository :
 
 ```shell
-$ git clone https://github.com/toxuandung/DRL_Navigation_Robot_ROS2_Foxy.git
-$ cd DRL_Navigation_Robot_ROS2_Foxy
+$ git clone https://github.com/Kjames3/capstone_bot.git
+$ cd capstone_bot
 ```
 Compile the workspace:
 
@@ -83,12 +83,12 @@ $ source install/setup.bash
 ```
 Training :
 ```shell
-$ ros2 launch td3 training_simulation.launch.py
+$ ros2 launch Capstone_Project training_simulation.launch.py
 ```
 monitor the training process by tensorboard. Open the new terminal:
 
 ```shell
-$ tensorboard dev upload --logdir     './src/td3/runs/train/tensorboard'
+$ tensorboard dev upload --logdir     './src/Capstone_Project/runs/train/tensorboard'
 ```
 <p align="center">
     <img width=70% src="https://github.com/toxuandung/DRL_Navigation_Robot_ROS2_Foxy/blob/main/Tensorboard.PNG">
@@ -102,7 +102,7 @@ Training example :
 
 Testing :
 ```shell
-$ ros2 launch td3 test_simulation.launch.py
+$ ros2 launch Capstone_Project test_simulation.launch.py
 ```
 Test example :
 
