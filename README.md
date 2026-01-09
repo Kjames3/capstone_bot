@@ -95,10 +95,10 @@ Here are videos demonstrating the robot's training and testing phases, as well a
 
 | Video | Description |
 |---|---|
-| [Physical Robot Demo](media/videos/showing_physical_robot.MOV) | Demonstration of the physical robot prototype, highlighting the chassis, motors, and integrated sensors. |
-| [Navigation Testing](media/videos/testing.MOV) | Live testing of the robot's navigation algorithms in a controlled environment, showing real-time obstacle avoidance. |
-| [Simulation Training](media/videos/training.MOV) | Time-lapse of the DRL model training process within the Gazebo simulation environment. |
-| [Extended Training](media/videos/training_2.mov) | Additional footage showing the robot's learning progress and behavior refinement over time. |
+| ![Physical Robot Demo](media/videos/showing_physical_robot.gif) | Demonstration of the physical robot prototype, highlighting the chassis, motors, and integrated sensors. |
+| ![Navigation Testing](media/videos/testing.gif) | Live testing of the robot's navigation algorithms in a controlled environment, showing real-time obstacle avoidance. |
+| ![Simulation Training](media/videos/training.gif) | Time-lapse of the DRL model training process within the Gazebo simulation environment. |
+| ![Extended Training](media/videos/training_2.gif) | Additional footage showing the robot's learning progress and behavior refinement over time. |
 
 ## Results
 The model was trained for over 2000 iterations.
