@@ -39,12 +39,12 @@ TD3 is an actor-critic algorithm that addresses the overestimation bias of DDPG.
 The architecture consists of an Actor network for decision making and two Critic networks for value estimation.
 
 <p align="center">
-    <img width="45%" src="Actor.png" alt="Actor Network">
-    <img width="45%" src="Critic.png" alt="Critic Network">
+    <img width="45%" src="media/images/Actor.png" alt="Actor Network">
+    <img width="45%" src="media/images/Critic.png" alt="Critic Network">
 </p>
 
 <p align="center">
-    <img width="80%" src="Td3.png" alt="TD3 Architecture">
+    <img width="80%" src="media/images/Td3.png" alt="TD3 Architecture">
 </p>
 
 ### Virtual Robot & Environment
@@ -63,7 +63,7 @@ The architecture consists of an Actor network for decision making and two Critic
     *   **Step Reward:** $v - |\omega| - penalty$. The penalty discourages being too close to obstacles.
 
 <p align="center">
-    <img width="60%" src="Training_env.png" alt="Training Environment">
+    <img width="60%" src="media/images/reached_target.PNG" alt="Training Environment">
 </p>
 
 ## Hardware Prototype (Design Phase)
@@ -73,13 +73,40 @@ A physical prototype was designed to validate the concept, although the primary 
 *   **Actuation:** 12V DC Motors with Encoders, H-Bridge Motor Drivers.
 *   **Power:** Lithium-Ion Battery (6000mAh).
 
+### Prototype Gallery
+
+<p align="center">
+    <img width="45%" src="media/images/successful_print.JPEG" alt="Chassis 3D Print 1">
+    <img width="45%" src="media/images/successful_print_2.JPEG" alt="Chassis 3D Print 2">
+</p>
+<p align="center">
+    <img width="45%" src="media/images/successful_print_3.JPEG" alt="Chassis 3D Print 3">
+    <img width="45%" src="media/images/successful_print_4.JPEG" alt="Chassis 3D Print 4">
+</p>
+<p align="center">
+    <img width="60%" src="media/images/top_plates.JPEG" alt="Top Plates Assembly">
+    <br>
+    <em>3D printed chassis components and top plate assembly for the physical robot.</em>
+</p>
+
+## Project Demonstrations
+
+Here are videos demonstrating the robot's training and testing phases, as well as the physical build.
+
+| Video | Description |
+|---|---|
+| [Physical Robot Demo](media/videos/showing_physical_robot.MOV) | Demonstration of the physical robot prototype, highlighting the chassis, motors, and integrated sensors. |
+| [Navigation Testing](media/videos/testing.MOV) | Live testing of the robot's navigation algorithms in a controlled environment, showing real-time obstacle avoidance. |
+| [Simulation Training](media/videos/training.MOV) | Time-lapse of the DRL model training process within the Gazebo simulation environment. |
+| [Extended Training](media/videos/training_2.mov) | Additional footage showing the robot's learning progress and behavior refinement over time. |
+
 ## Results
 The model was trained for over 2000 iterations.
 *   **Average Q-Value:** showed improvement after initial exploration, indicating the robot was learning better value estimations for its actions.
 *   **Max Q-Value:** showed the peak expected rewards the robot anticipated.
 
 <p align="center">
-    <img width="70%" src="Tensorboard.PNG" alt="Tensorboard Results">
+    <img width="70%" src="media/images/Tensorboard.PNG" alt="Tensorboard Results">
 </p>
 
 ## Installation & Usage
